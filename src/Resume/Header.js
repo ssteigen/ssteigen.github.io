@@ -9,10 +9,10 @@ export function Header() {
       <Grid container justifyContent="space-between" alignItems="center">
         <Grid item>
           <Typography variant="h3" component="h1">
-            Heading
+            Savanah Steigen
           </Typography>
           <Typography variant="h5" component="h2">
-            Subtitle
+            Web Developer
           </Typography>
         </Grid>
         <Grid item>

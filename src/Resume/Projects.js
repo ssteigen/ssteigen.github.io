@@ -1,8 +1,8 @@
 import { Section } from "./Section";
 
-export function Profile() {
+export function Projects() {
   return (
-    <Section title="Title">
+    <Section title="Projects">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum autem
         eos recusandae asperiores rem porro. Possimus deserunt molestias, eius

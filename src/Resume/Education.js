@@ -14,7 +14,7 @@ function EduItem({degree, university, gradYear}) {
 
 export function Education() {
   return (
-    <Section title="Title">
+    <Section title="Education">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum autem
         eos recusandae asperiores rem porro. Possimus deserunt molestias, eius

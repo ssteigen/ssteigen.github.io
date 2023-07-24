@@ -13,18 +13,26 @@ const divider = (
   />
 );
 
-export function Layout() {
+export function Resume() {
   return (
-    <>
+    <Container
+      sx={{
+        bgcolor: "#eee",
+        minHeight: "100vh",
+        paddingY: 2,
+        marginY: 2,
+        maxWidth: "960px",
+      }}
+    >
       <Header />
       {divider}
-      <Grid container justifyContent='space-between'>
-        <Grid item sm='4'>
+      <Grid container justifyContent="space-between">
+        <Grid item sm="4">
           <Contact />
           {divider}
           <Education />
         </Grid>
-        <Grid item sm='auto'>
+        <Grid item sm="auto">
           <Divider
             orientation="vertical"
 
@@ -39,6 +47,6 @@ export function Layout() {
           <Projects />
         </Grid>
       </Grid>
-    </>
+    </Container>
   );
 }

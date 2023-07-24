@@ -11,9 +11,9 @@ export function InitialAvatar() {
         fontSize: "2.5em",
       }}
     >
-      A
+      S
       <Divider orientation="vertical" sx={{ marginX: 0.5, borderWidth: 1 }} />
-      B
+      S
     </Avatar>
   );
 }

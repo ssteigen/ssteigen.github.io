@@ -2,7 +2,7 @@ import { Section } from "./Section";
 
 export function Skills() {
   return (
-    <Section title="Title">
+    <Section title="Skills">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum autem
         eos recusandae asperiores rem porro. Possimus deserunt molestias, eius
