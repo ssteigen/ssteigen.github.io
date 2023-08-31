@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { Section } from "./Section";
+import { Section } from "../Section";
 
 function EduItem({degree, university, gradYear}) {
   return (

@@ -1,6 +1,6 @@
 import { AutoAwesome, Email, LinkedIn, Place } from "@mui/icons-material";
 import { List, ListItem, ListItemIcon, ListItemText } from "@mui/material";
-import { Section } from "./Section";
+import { Section } from "../Section";
 
 export function Contact() {
   return (

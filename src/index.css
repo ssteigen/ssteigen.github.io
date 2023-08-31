@@ -7,7 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.brand {
+  color: #e081d2;
+  font-weight: bold;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a .code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: transparent;
+  transition: color 0.3s ease-out;
+  margin: 0 .25em;
+  font-weight: bold;
+}
+
+a:hover .code {
+  color: #ff7f50;
 }

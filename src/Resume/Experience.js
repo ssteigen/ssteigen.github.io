@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { Section } from "./Section";
+import { Section } from "../Section";
 
 function ExpItem({ title, company, startDate, endDate, children }) {
   return (
