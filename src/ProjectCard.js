@@ -6,9 +6,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Chip, Stack } from "@mui/material";
+import { Chip, Tooltip, IconButton, Stack } from "@mui/material";
+import { GitHub } from "@mui/icons-material";
 
-export default function ImgMediaCard({
+export default function ProjectCard({
   title,
   description,
   imgSrc,
@@ -33,32 +34,44 @@ export default function ImgMediaCard({
           {description}
         </Typography>
         {chips && (
-          <Stack
-            spacing={1}
-            sx={{ mt: 2 }}
-            direction="row"
-            justifyContent="center"
-          >
+          <Stack sx={{ mt: 2 }} direction="row" flexWrap="wrap" gap={1}>
             {chips.map((chip) => (
               <Chip key={chip} label={chip} size="small" />
             ))}
           </Stack>
         )}
       </CardContent>
-      <CardActions
-        sx={{ borderTop: "1px solid #eee", justifyContent: "center" }}
-      >
-        <Stack spacing={2} direction="row">
-          {demoUrl && (
-            <Button href={demoUrl} size="large" variant="contained">
-              Demo
-            </Button>
+      <CardActions sx={{ borderTop: "1px solid #eee" }}>
+        <Stack
+          spacing={2}
+          direction="row"
+          justifyContent="space-between"
+          width="100%"
+        >
+          {demoUrl ? (
+            <Tooltip title="See it in action!" placement="top">
+              <Button
+                href={demoUrl}
+                variant="contained"
+                fullWidth
+                color="secondary"
+              >
+                Demo
+              </Button>
+            </Tooltip>
+          ) : (
+            <div />
           )}
           {repoUrl && (
-            <Button href={repoUrl} size="large" variant="text">
-              <span className="code">&lt;</span>Github
-              <span className="code">/&gt;</span>
-            </Button>
+            <Tooltip title="See the code on GitHub" placement="top">
+              <IconButton
+                href={repoUrl}
+                color="secondary"
+                sx={{ border: "1px solid" }}
+              >
+                <GitHub alt="See the code on GitHub" />
+              </IconButton>
+            </Tooltip>
           )}
         </Stack>
       </CardActions>

@@ -1,16 +1,20 @@
 import { Grid, Typography, Box } from "@mui/material";
 
-import ImgMediaCard from "./ImgMediaCard";
+import ProjectCard from "./ProjectCard";
 
 export function Projects() {
   const imgHeight = 200;
 
+  const xsWidth = 12;
+  const smWidth = 6;
+  const mdWidth = 4;
+
   return (
     <Box>
       <Typography variant="h2" sx={{textAlign: 'left', borderBottom: '2px solid #eee', marginBottom: 4}}>Projects</Typography>
-      <Grid container spacing={3}>
-        <Grid item xs>
-          <ImgMediaCard
+      <Grid container spacing={2}>
+        <Grid item xs={xsWidth} sm={smWidth} md={mdWidth}>
+          <ProjectCard
             title="The Yarn Basket"
             description="Fun little site redesign in HTML and CSS"
             imgSrc="https://github.com/ssteigen/shot-scraper/blob/main/the-yarn-basket-screenshot.png?raw=true"
@@ -22,8 +26,8 @@ export function Projects() {
           />
         </Grid>
 
-        <Grid item xs>
-          <ImgMediaCard
+        <Grid item xs={xsWidth} sm={smWidth} md={mdWidth}>
+          <ProjectCard
             title="Skatesona"
             description="Mock up your dream skates"
             imgSrc="https://github.com/ssteigen/shot-scraper/blob/main/skatesona-screenshot.png?raw=true"
@@ -35,8 +39,8 @@ export function Projects() {
           />
         </Grid>
 
-        <Grid item xs>
-          <ImgMediaCard
+        <Grid item xs={xsWidth} sm={smWidth} md={mdWidth}>
+          <ProjectCard
             title="Namerator"
             description="Generate a name for your agile team"
             imgSrc="https://github.com/ssteigen/shot-scraper/blob/main/namerator-screenshot.png?raw=true"
@@ -48,8 +52,8 @@ export function Projects() {
           />
         </Grid>
 
-        <Grid item xs>
-          <ImgMediaCard
+        <Grid item xs={xsWidth} sm={smWidth} md={mdWidth}>
+          <ProjectCard
             title="AC Design Hub"
             description="A searchable repository of community-made Animal Crossing designs"
             imgSrc="https://raw.githubusercontent.com/ssteigen/acdesignhub/master/readme/Screenshot_2020-05-15.png"
@@ -60,8 +64,8 @@ export function Projects() {
           />
         </Grid>
 
-        <Grid item xs>
-          <ImgMediaCard
+        <Grid item xs={xsWidth} sm={smWidth} md={mdWidth}>
+          <ProjectCard
             title="Colorfill"
             description="A little color fill game"
             imgSrc="https://github.com/ssteigen/shot-scraper/blob/main/colorfill-screenshot.png?raw=true"
@@ -73,8 +77,8 @@ export function Projects() {
           />
         </Grid>
 
-        <Grid item xs>
-          <ImgMediaCard
+        <Grid item xs={xsWidth} sm={smWidth} md={mdWidth}>
+          <ProjectCard
             title="Minesweeper"
             description="A little minesweeper game"
             imgSrc="https://github.com/ssteigen/shot-scraper/blob/main/minesweeper-screenshot.png?raw=true"

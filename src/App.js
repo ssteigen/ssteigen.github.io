@@ -1,5 +1,3 @@
-import "./App.css";
-
 import { Box, Container } from "@mui/material";
 
 import { Header } from "./Header";
@@ -18,11 +16,24 @@ function App() {
         }}
       >
         <Header />
-        <Container>
-          <About id="about" />
-          <Projects id="projects" />
-        </Container>
-        <Footer />
+
+        <Box sx={{ py: 10 }}>
+          <Container id="about" maxWidth="sm">
+            <About />
+          </Container>
+        </Box>
+
+        <Box sx={{ backgroundColor: "#eee", py: 10 }}>
+          <Container id="projects">
+            <Projects />
+          </Container>
+        </Box>
+
+        <Box component="footer" textAlign='center' sx={{ py: 2 }}>
+          <Container>
+            <Footer />
+          </Container>
+        </Box>
       </Box>
     </div>
   );

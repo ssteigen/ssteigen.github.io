@@ -1,30 +1,11 @@
-import { Box, Container, Typography } from "@mui/material";
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary">
-      Copyright © { new Date().getFullYear() } Savanah Steigen
-    </Typography>
-  );
-}
+import { Favorite } from "@mui/icons-material";
+import { Typography } from "@mui/material";
 
 export function Footer() {
   return (
-    <Box
-      component="footer"
-      sx={{
-        py: 3,
-        px: 2,
-        mt: 4,
-        backgroundColor: (theme) =>
-          theme.palette.mode === "light"
-            ? theme.palette.grey[200]
-            : theme.palette.grey[800],
-      }}
-    >
-      <Container maxWidth="sm">
-        <Copyright />
-      </Container>
-    </Box>
+      <Typography variant="body2" color="text.secondary">
+        Made with <Favorite sx={{color: 'pink', fontSize: '1.5em', verticalAlign: 'top'}} alt="love" /> by San Steigen<br />
+        Copyright &copy; { new Date().getFullYear() }
+      </Typography>
   );
 }
