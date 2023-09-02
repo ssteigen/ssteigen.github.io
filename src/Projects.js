@@ -35,7 +35,7 @@ export function Projects() {
             imgHeight={imgHeight}
             repoUrl="https://github.com/ssteigen/skatesona"
             demoUrl="https://ssteigen.github.io/skatesona/"
-            chips={['HTML', 'CSS', 'JavaScript', 'React']}
+            chips={['HTML', 'CSS', 'JavaScript', 'React', 'styled-components']}
           />
         </Grid>
 
@@ -73,7 +73,7 @@ export function Projects() {
             imgHeight={imgHeight}
             repoUrl="https://github.com/ssteigen/colorfill"
             demoUrl="https://ssteigen.github.io/colorfill/"
-            chips={['HTML', 'CSS', 'JavaScript', 'React']}
+            chips={['HTML', 'CSS', 'JavaScript']}
           />
         </Grid>
 
@@ -86,7 +86,7 @@ export function Projects() {
             imgHeight={imgHeight}
             repoUrl="https://github.com/ssteigen/minesweeper"
             demoUrl="https://ssteigen.github.io/minesweeper/"
-            chips={['HTML', 'CSS', 'JavaScript', 'React']}
+            chips={['HTML', 'CSS', 'JavaScript']}
           />
         </Grid>
       </Grid>
